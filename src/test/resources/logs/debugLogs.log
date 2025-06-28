@@ -1,0 +1,39 @@
+11:43:18.234 INFO  AUTOMATION - Suite iniciada: Surefire suite
+11:43:18.324 DEBUG AUTOMATION - Borrando la evidencia anterior
+11:43:18.478 DEBUG AUTOMATION - Inicializando el driver
+11:43:30.737 DEBUG AUTOMATION - Maximizando la pantalla
+11:43:30.778 DEBUG AUTOMATION - Borrando las cookies
+11:43:30.796 DEBUG AUTOMATION - Asignando driver al web driver provider
+11:43:31.063 INFO  AUTOMATION - Comenzando el test: ejercicio1Test
+11:43:31.102 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
+11:43:33.727 INFO  AUTOMATION - Obteniendo la URL actual
+11:43:33.738 INFO  AUTOMATION - Verificando que las urls sean iguales
+11:43:33.754 DEBUG AUTOMATION - beforeTestStop
+11:43:33.770 INFO  AUTOMATION - Test exitoso: ejercicio1Test
+11:43:33.773 DEBUG AUTOMATION - Matando el driver
+11:43:34.067 DEBUG AUTOMATION - Inicializando el driver
+11:43:36.200 DEBUG AUTOMATION - Maximizando la pantalla
+11:43:36.240 DEBUG AUTOMATION - Borrando las cookies
+11:43:36.253 DEBUG AUTOMATION - Asignando driver al web driver provider
+11:43:36.255 INFO  AUTOMATION - Comenzando el test: ejercicio2Test
+11:43:36.261 INFO  AUTOMATION - Navegando a: https://the-internet.herokuapp.com/
+11:43:40.445 INFO  AUTOMATION - Navegando a: https://github.com/
+11:43:43.715 INFO  AUTOMATION - Regresando a la página anterior
+11:43:43.755 INFO  AUTOMATION - Obteniendo la URL actual
+11:43:43.769 INFO  AUTOMATION - Verificando que las urls sean iguales
+11:43:43.770 DEBUG AUTOMATION - beforeTestStop
+11:43:43.774 INFO  AUTOMATION - Test exitoso: ejercicio2Test
+11:43:43.775 DEBUG AUTOMATION - Matando el driver
+11:43:44.086 DEBUG AUTOMATION - Inicializando el driver
+11:43:45.359 DEBUG AUTOMATION - Maximizando la pantalla
+11:43:45.404 DEBUG AUTOMATION - Borrando las cookies
+11:43:45.418 DEBUG AUTOMATION - Asignando driver al web driver provider
+11:43:45.428 INFO  AUTOMATION - Comenzando el test: siempreFallaTest
+11:43:45.437 INFO  AUTOMATION - Navegando a: https://the-internet.herokuapp.com/
+11:43:48.782 INFO  AUTOMATION - Obteniendo la url actual
+11:43:48.796 INFO  AUTOMATION - Verificando las url
+11:43:48.813 DEBUG AUTOMATION - beforeTestStop
+11:43:49.018 INFO  AUTOMATION - Test fallido: siempreFallaTest
+11:43:49.018 DEBUG AUTOMATION - Tomando screenshot
+11:43:49.162 DEBUG AUTOMATION - Matando el driver
+11:43:49.443 INFO  AUTOMATION - Suite finalizada: Surefire suite
