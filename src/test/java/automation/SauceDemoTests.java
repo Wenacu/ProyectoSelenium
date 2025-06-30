@@ -1,6 +1,7 @@
 package automation;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.BaseTest;
@@ -63,6 +64,105 @@ public class SauceDemoTests extends BaseTest {
         );
         softAssert.assertAll();
     }
+
+    @Test
+    public void select1Test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+        final var selectWebElement = driver.
+                findElement(By.cssSelector("select[data-test='product-sort-container']"));
+
+        //casteamos a select
+        final var select = new Select(selectWebElement);
+
+        Logs.info("Seleccionamos los items de manera alfabetica Z -> A");
+        select.selectByValue("za");
+
+        final var itemList = driver.findElements(By.className("inventory_item_name"));
+
+        Logs.info("Obteniendo el primer elemento");
+        final var primerElemento = itemList.get(0).getText();
+
+        Logs.info("Obteniendo el ultimo elemento");
+        final var ultimoElemento = itemList.get(itemList.size() - 1).getText();
+
+        Logs.info("Verificando los nombres");
+        softAssert.assertEquals(primerElemento, "Test.allTheThings() T-Shirt (Red)");
+        softAssert.assertEquals(ultimoElemento, "Sauce Labs Backpack");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void link1Test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        final var facebookLabel = driver
+                .findElement(By.xpath("//a[text()='Facebook']"));
+
+        Logs.info("Verificando que el hipervinculo este correcto");
+        softAssert.assertTrue(facebookLabel.isDisplayed());
+        softAssert.assertTrue(facebookLabel.isEnabled());
+        softAssert.assertEquals(facebookLabel.getAttribute("href"),
+                "https://www.facebook.com/saucelabs");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void link2Test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        final var linkedinLabel = driver
+                .findElement(By.xpath("//a[text()='LinkedIn']"));
+
+        Logs.info("Verificando que el hipervinculo este correcto");
+        softAssert.assertTrue(linkedinLabel.isDisplayed());
+        softAssert.assertTrue(linkedinLabel.isEnabled());
+        softAssert.assertEquals(linkedinLabel.getAttribute("href"),
+                "https://www.linkedin.com/company/sauce-labs/");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void link3Test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        Logs.info("Abriendo el menu burger");
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+
+        Logs.info("Esperando que abra el menu");
+        sleep(2000);
+
+        final var aboutLink = driver.findElement(By.id("about_sidebar_link"));
+
+        Logs.info("Verificando el vinculo de about");
+        softAssert.assertTrue(aboutLink.isDisplayed());
+        softAssert.assertTrue(aboutLink.isEnabled());
+        softAssert.assertEquals(aboutLink.getAttribute("href"),
+                "https://saucelabs.com/");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void logoutTest() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        Logs.info("Abriendo el menu burger");
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+
+        Logs.info("Esperando que abra el menu");
+        sleep(2000);
+
+        final var logoutButton = driver.findElement(By.id("logout_sidebar_link"));
+
+        Logs.info("Haciendo click en el boton del logout");
+        logoutButton.click();
+
+        Logs.info("Esperando que llegue a la pagina inicial");
+        sleep(2000);
+
+        Logs.info("Verificando un elemento de la pagina principal");
+        Assert.assertTrue(driver.findElement(By.id("user-name")).isDisplayed());
+    }
+
 
     private void rellenarFormularioLogin(String username, String password) {
         Logs.info("Navegando a la pagina");
