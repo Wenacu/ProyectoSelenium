@@ -1,20 +1,124 @@
-11:25:04.006 INFO  AUTOMATION - Suite iniciada: Default Suite
-11:25:04.091 DEBUG AUTOMATION - Borrando la evidencia anterior
-11:25:04.315 DEBUG AUTOMATION - Inicializando el driver
-11:25:06.706 DEBUG AUTOMATION - Maximizando la pantalla
-11:25:06.814 DEBUG AUTOMATION - Borrando las cookies
-11:25:06.832 DEBUG AUTOMATION - Asignando driver al web driver provider
-11:25:07.066 INFO  AUTOMATION - Comenzando el test: logoutTest
-11:25:07.119 INFO  AUTOMATION - Navegando a la pagina
-11:25:12.356 INFO  AUTOMATION - Escribiendo el username
-11:25:12.570 INFO  AUTOMATION - Escribiendo el password
-11:25:12.748 INFO  AUTOMATION - Haciendo click en el boton de login
-11:25:15.202 INFO  AUTOMATION - Abriendo el menu burger
-11:25:15.297 INFO  AUTOMATION - Esperando que abra el menu
-11:25:17.329 INFO  AUTOMATION - Haciendo click en el boton del logout
-11:25:17.427 INFO  AUTOMATION - Esperando que llegue a la pagina inicial
-11:25:19.433 INFO  AUTOMATION - Verificando un elemento de la pagina principal
-11:25:19.478 DEBUG AUTOMATION - beforeTestStop
-11:25:19.496 INFO  AUTOMATION - Test exitoso: logoutTest
-11:25:19.500 DEBUG AUTOMATION - Matando el driver
-11:25:19.826 INFO  AUTOMATION - Suite finalizada: Default Suite
+12:21:49.690 INFO  AUTOMATION - Suite iniciada: Surefire suite
+12:21:49.746 DEBUG AUTOMATION - Borrando la evidencia anterior
+12:21:49.928 DEBUG AUTOMATION - Inicializando el driver
+12:21:52.374 DEBUG AUTOMATION - Maximizando la pantalla
+12:21:52.446 DEBUG AUTOMATION - Borrando las cookies
+12:21:52.463 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:21:52.474 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:21:52.780 INFO  AUTOMATION - Comenzando el test: detalleProductoTest
+12:21:52.855 INFO  AUTOMATION - Navegando a la pagina
+12:21:55.141 INFO  AUTOMATION - Escribiendo el username
+12:21:55.333 INFO  AUTOMATION - Escribiendo el password
+12:21:55.425 INFO  AUTOMATION - Haciendo click en el boton de login
+12:21:55.651 INFO  AUTOMATION - Haciendo click en el primer elemento de la lista
+12:21:55.804 INFO  AUTOMATION - Verificando el detalle del producto
+12:21:55.963 DEBUG AUTOMATION - beforeTestStop
+12:21:55.979 INFO  AUTOMATION - Test exitoso: detalleProductoTest
+12:21:55.981 DEBUG AUTOMATION - Matando el driver
+12:21:56.295 DEBUG AUTOMATION - Inicializando el driver
+12:21:57.552 DEBUG AUTOMATION - Maximizando la pantalla
+12:21:57.596 DEBUG AUTOMATION - Borrando las cookies
+12:21:57.609 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:21:57.617 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:21:57.621 INFO  AUTOMATION - Comenzando el test: link1Test
+12:21:57.628 INFO  AUTOMATION - Navegando a la pagina
+12:22:02.407 INFO  AUTOMATION - Escribiendo el username
+12:22:02.516 INFO  AUTOMATION - Escribiendo el password
+12:22:02.601 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:02.759 INFO  AUTOMATION - Verificando que el hipervinculo este correcto
+12:22:02.809 DEBUG AUTOMATION - beforeTestStop
+12:22:02.816 INFO  AUTOMATION - Test exitoso: link1Test
+12:22:02.820 DEBUG AUTOMATION - Matando el driver
+12:22:03.083 DEBUG AUTOMATION - Inicializando el driver
+12:22:04.201 DEBUG AUTOMATION - Maximizando la pantalla
+12:22:04.237 DEBUG AUTOMATION - Borrando las cookies
+12:22:04.250 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:22:04.254 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:22:04.260 INFO  AUTOMATION - Comenzando el test: link2Test
+12:22:04.268 INFO  AUTOMATION - Navegando a la pagina
+12:22:07.190 INFO  AUTOMATION - Escribiendo el username
+12:22:07.298 INFO  AUTOMATION - Escribiendo el password
+12:22:07.387 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:07.615 INFO  AUTOMATION - Verificando que el hipervinculo este correcto
+12:22:07.675 DEBUG AUTOMATION - beforeTestStop
+12:22:07.681 INFO  AUTOMATION - Test exitoso: link2Test
+12:22:07.684 DEBUG AUTOMATION - Matando el driver
+12:22:08.301 DEBUG AUTOMATION - Inicializando el driver
+12:22:09.331 DEBUG AUTOMATION - Maximizando la pantalla
+12:22:09.370 DEBUG AUTOMATION - Borrando las cookies
+12:22:09.381 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:22:09.385 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:22:09.388 INFO  AUTOMATION - Comenzando el test: link3Test
+12:22:09.398 INFO  AUTOMATION - Navegando a la pagina
+12:22:12.268 INFO  AUTOMATION - Escribiendo el username
+12:22:12.371 INFO  AUTOMATION - Escribiendo el password
+12:22:12.460 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:12.606 INFO  AUTOMATION - Abriendo el menu burger
+12:22:12.699 INFO  AUTOMATION - Esperando que abra el menu
+12:22:14.722 INFO  AUTOMATION - Verificando el vinculo de about
+12:22:14.754 DEBUG AUTOMATION - beforeTestStop
+12:22:14.757 INFO  AUTOMATION - Test exitoso: link3Test
+12:22:14.758 DEBUG AUTOMATION - Matando el driver
+12:22:15.013 DEBUG AUTOMATION - Inicializando el driver
+12:22:16.197 DEBUG AUTOMATION - Maximizando la pantalla
+12:22:16.239 DEBUG AUTOMATION - Borrando las cookies
+12:22:16.254 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:22:16.258 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:22:16.265 INFO  AUTOMATION - Comenzando el test: logoutTest
+12:22:16.271 INFO  AUTOMATION - Navegando a la pagina
+12:22:19.135 INFO  AUTOMATION - Escribiendo el username
+12:22:19.257 INFO  AUTOMATION - Escribiendo el password
+12:22:19.348 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:19.516 INFO  AUTOMATION - Abriendo el menu burger
+12:22:19.683 INFO  AUTOMATION - Esperando que abra el menu
+12:22:21.720 INFO  AUTOMATION - Haciendo click en el boton del logout
+12:22:21.789 INFO  AUTOMATION - Verificando un elemento de la pagina principal
+12:22:21.814 DEBUG AUTOMATION - beforeTestStop
+12:22:21.816 INFO  AUTOMATION - Test exitoso: logoutTest
+12:22:21.817 DEBUG AUTOMATION - Matando el driver
+12:22:22.018 DEBUG AUTOMATION - Inicializando el driver
+12:22:23.570 DEBUG AUTOMATION - Maximizando la pantalla
+12:22:23.672 DEBUG AUTOMATION - Borrando las cookies
+12:22:23.739 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:22:23.761 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:22:23.784 INFO  AUTOMATION - Comenzando el test: select1Test
+12:22:23.802 INFO  AUTOMATION - Navegando a la pagina
+12:22:28.700 INFO  AUTOMATION - Escribiendo el username
+12:22:28.827 INFO  AUTOMATION - Escribiendo el password
+12:22:28.913 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:29.092 INFO  AUTOMATION - Seleccionamos los items de manera alfabetica Z -> A
+12:22:29.220 INFO  AUTOMATION - Obteniendo el primer elemento
+12:22:29.243 INFO  AUTOMATION - Obteniendo el ultimo elemento
+12:22:29.260 INFO  AUTOMATION - Verificando los nombres
+12:22:29.260 DEBUG AUTOMATION - beforeTestStop
+12:22:29.263 INFO  AUTOMATION - Test exitoso: select1Test
+12:22:29.265 DEBUG AUTOMATION - Matando el driver
+12:22:29.507 DEBUG AUTOMATION - Inicializando el driver
+12:22:30.673 DEBUG AUTOMATION - Maximizando la pantalla
+12:22:30.713 DEBUG AUTOMATION - Borrando las cookies
+12:22:30.722 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:22:30.724 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:22:30.727 INFO  AUTOMATION - Comenzando el test: usuarioInvalidoTest
+12:22:30.731 INFO  AUTOMATION - Navegando a la pagina
+12:22:33.641 INFO  AUTOMATION - Escribiendo el username
+12:22:33.751 INFO  AUTOMATION - Escribiendo el password
+12:22:33.844 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:33.970 INFO  AUTOMATION - Verificando el mensaje de error
+12:22:34.012 DEBUG AUTOMATION - beforeTestStop
+12:22:34.014 INFO  AUTOMATION - Test exitoso: usuarioInvalidoTest
+12:22:34.015 DEBUG AUTOMATION - Matando el driver
+12:22:34.223 DEBUG AUTOMATION - Inicializando el driver
+12:22:35.371 DEBUG AUTOMATION - Maximizando la pantalla
+12:22:35.417 DEBUG AUTOMATION - Borrando las cookies
+12:22:35.431 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+12:22:35.434 DEBUG AUTOMATION - Asignando driver al web driver provider
+12:22:35.437 INFO  AUTOMATION - Comenzando el test: usuarioValidoTest
+12:22:35.441 INFO  AUTOMATION - Navegando a la pagina
+12:22:38.541 INFO  AUTOMATION - Escribiendo el username
+12:22:38.670 INFO  AUTOMATION - Escribiendo el password
+12:22:38.772 INFO  AUTOMATION - Haciendo click en el boton de login
+12:22:38.958 INFO  AUTOMATION - Verificando que el inventory list este visible
+12:22:38.977 DEBUG AUTOMATION - beforeTestStop
+12:22:38.979 INFO  AUTOMATION - Test exitoso: usuarioValidoTest
+12:22:38.980 DEBUG AUTOMATION - Matando el driver
+12:22:39.268 INFO  AUTOMATION - Suite finalizada: Surefire suite

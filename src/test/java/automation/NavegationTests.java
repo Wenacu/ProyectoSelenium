@@ -6,7 +6,7 @@ import utilities.BaseTest;
 import utilities.Logs;
 
 public class NavegationTests extends BaseTest {
-    @Test(groups = {regression, smoke})
+    @Test
     public void ejercicio1Test() {
         final var url = "https://www.saucedemo.com/";
 
@@ -22,7 +22,7 @@ public class NavegationTests extends BaseTest {
         Assert.assertEquals(currentUrl, url);
     }
 
-    @Test(groups = {regression})
+    @Test
     public void ejercicio2Test() {
         final var urlHeroku = "https://the-internet.herokuapp.com/";
         final var urlGithub = "https://github.com/";
@@ -49,7 +49,7 @@ public class NavegationTests extends BaseTest {
         Assert.assertEquals(currentUrl, urlHeroku);
     }
 
-    @Test(groups = {regression})
+    @Test
     public void siempreFallaTest() {
         final var url = "https://the-internet.herokuapp.com/";
 

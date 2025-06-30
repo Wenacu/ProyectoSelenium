@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.asserts.SoftAssert;
 
+import java.time.Duration;
+
 @Listeners({TestListeners.class, SuiteListeners.class})
 public class BaseTest {
     protected SoftAssert softAssert;
@@ -28,6 +30,9 @@ public class BaseTest {
 
         Logs.debug("Borrando las cookies");
         driver.manage().deleteAllCookies();
+
+        Logs.debug("Seteando implicit wait de 5 segundos");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         Logs.debug("Asignando driver al web driver provider");
         new WebdriverProvider().set(driver);

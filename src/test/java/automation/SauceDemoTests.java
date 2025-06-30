@@ -8,7 +8,7 @@ import utilities.BaseTest;
 import utilities.Logs;
 
 public class SauceDemoTests extends BaseTest {
-    @Test
+    @Test(groups = {regression, smoke})
     public void usuarioInvalidoTest() {
 
         rellenarFormularioLogin("locked_out_user", "secret_sauce");
@@ -22,7 +22,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void usuarioValidoTest() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -32,7 +32,7 @@ public class SauceDemoTests extends BaseTest {
         Assert.assertTrue(inventoryList.isDisplayed());
     }
 
-    @Test
+    @Test(groups = {regression})
     public void detalleProductoTest() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -42,8 +42,8 @@ public class SauceDemoTests extends BaseTest {
 
         imageList.get(0).click();
 
-        Logs.info("Esperando que cargue el detalle del producto");
-        sleep(1000);
+        //Logs.info("Esperando que cargue el detalle del producto");
+        //sleep(1000);
 
         Logs.info("Verificando el detalle del producto");
         softAssert.assertTrue(
@@ -65,7 +65,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void select1Test() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
         final var selectWebElement = driver.
@@ -91,7 +91,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void link1Test() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -106,7 +106,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void link2Test() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -121,7 +121,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void link3Test() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -141,7 +141,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void logoutTest() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -156,8 +156,8 @@ public class SauceDemoTests extends BaseTest {
         Logs.info("Haciendo click en el boton del logout");
         logoutButton.click();
 
-        Logs.info("Esperando que llegue a la pagina inicial");
-        sleep(2000);
+        //Logs.info("Esperando que llegue a la pagina inicial");
+        //sleep(2000);
 
         Logs.info("Verificando un elemento de la pagina principal");
         Assert.assertTrue(driver.findElement(By.id("user-name")).isDisplayed());
@@ -168,7 +168,7 @@ public class SauceDemoTests extends BaseTest {
         Logs.info("Navegando a la pagina");
         driver.get("https://www.saucedemo.com/");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Escribiendo el username");
         driver.findElement(By.id("user-name")).sendKeys(username);
@@ -179,7 +179,7 @@ public class SauceDemoTests extends BaseTest {
         Logs.info("Haciendo click en el boton de login");
         driver.findElement(By.id("login-button")).click();
 
-        sleep(2000);
+        //sleep(2000);
 
     }
 }
