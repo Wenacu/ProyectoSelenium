@@ -38,4 +38,13 @@ public class BaseTest {
         Logs.debug("Matando el driver");
         driver.quit();
     }
+
+    protected void sleep(int timeMs) {
+        try {
+            Thread.sleep(timeMs);
+        } catch (InterruptedException interruptedException) {
+            Logs.error("InterruptedException: %s",
+                    interruptedException.getLocalizedMessage());
+        }
+    }
 }
