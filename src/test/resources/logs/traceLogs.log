@@ -1,21 +1,20 @@
-00:06:27.157 INFO  AUTOMATION - Suite iniciada: Default Suite
-00:06:27.270 DEBUG AUTOMATION - Borrando la evidencia anterior
-00:06:27.439 DEBUG AUTOMATION - Inicializando el driver
-00:06:29.845 DEBUG AUTOMATION - Maximizando la pantalla
-00:06:29.905 DEBUG AUTOMATION - Borrando las cookies
-00:06:29.925 DEBUG AUTOMATION - Asignando driver al web driver provider
-00:06:30.147 INFO  AUTOMATION - Comenzando el test: detalleProductoTest
-00:06:30.188 INFO  AUTOMATION - Navegando a la pagina
-00:06:35.679 INFO  AUTOMATION - Escribiendo el username
-00:06:35.795 INFO  AUTOMATION - Escribiendo el password
-00:06:35.865 INFO  AUTOMATION - Haciendo click en el boton de login
-00:06:38.067 INFO  AUTOMATION - Haciendo click en el primer elemento de la lista
-00:06:38.128 INFO  AUTOMATION - Esperando que cargue el detalle del producto
-00:06:39.146 INFO  AUTOMATION - Verificando el detalle del producto
-00:06:39.226 DEBUG AUTOMATION - beforeTestStop
-00:06:39.982 INFO  AUTOMATION - Test fallido: detalleProductoTest
-00:06:39.982 DEBUG AUTOMATION - Tomando screenshot
-00:06:40.355 DEBUG AUTOMATION - Tomando page source
-00:06:40.355 DEBUG AUTOMATION - Creando los directorios padres si no existen
-00:06:40.616 DEBUG AUTOMATION - Matando el driver
-00:06:41.125 INFO  AUTOMATION - Suite finalizada: Default Suite
+11:25:04.006 INFO  AUTOMATION - Suite iniciada: Default Suite
+11:25:04.091 DEBUG AUTOMATION - Borrando la evidencia anterior
+11:25:04.315 DEBUG AUTOMATION - Inicializando el driver
+11:25:06.706 DEBUG AUTOMATION - Maximizando la pantalla
+11:25:06.814 DEBUG AUTOMATION - Borrando las cookies
+11:25:06.832 DEBUG AUTOMATION - Asignando driver al web driver provider
+11:25:07.066 INFO  AUTOMATION - Comenzando el test: logoutTest
+11:25:07.119 INFO  AUTOMATION - Navegando a la pagina
+11:25:12.356 INFO  AUTOMATION - Escribiendo el username
+11:25:12.570 INFO  AUTOMATION - Escribiendo el password
+11:25:12.748 INFO  AUTOMATION - Haciendo click en el boton de login
+11:25:15.202 INFO  AUTOMATION - Abriendo el menu burger
+11:25:15.297 INFO  AUTOMATION - Esperando que abra el menu
+11:25:17.329 INFO  AUTOMATION - Haciendo click en el boton del logout
+11:25:17.427 INFO  AUTOMATION - Esperando que llegue a la pagina inicial
+11:25:19.433 INFO  AUTOMATION - Verificando un elemento de la pagina principal
+11:25:19.478 DEBUG AUTOMATION - beforeTestStop
+11:25:19.496 INFO  AUTOMATION - Test exitoso: logoutTest
+11:25:19.500 DEBUG AUTOMATION - Matando el driver
+11:25:19.826 INFO  AUTOMATION - Suite finalizada: Default Suite
