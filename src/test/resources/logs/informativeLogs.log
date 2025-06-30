@@ -1,19 +1,11 @@
-21:45:03.459 INFO  AUTOMATION - Suite iniciada: Surefire suite
-21:45:06.632 INFO  AUTOMATION - Comenzando el test: ejercicio1Test
-21:45:06.671 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
-21:45:11.170 INFO  AUTOMATION - Obteniendo la URL actual
-21:45:11.179 INFO  AUTOMATION - Verificando que las urls sean iguales
-21:45:11.207 INFO  AUTOMATION - Test exitoso: ejercicio1Test
-21:45:12.685 INFO  AUTOMATION - Comenzando el test: ejercicio2Test
-21:45:12.689 INFO  AUTOMATION - Navegando a: https://the-internet.herokuapp.com/
-21:45:17.965 INFO  AUTOMATION - Navegando a: https://github.com/
-21:45:24.136 INFO  AUTOMATION - Regresando a la página anterior
-21:45:26.170 INFO  AUTOMATION - Obteniendo la URL actual
-21:45:26.184 INFO  AUTOMATION - Verificando que las urls sean iguales
-21:45:26.188 INFO  AUTOMATION - Test exitoso: ejercicio2Test
-21:45:28.155 INFO  AUTOMATION - Comenzando el test: siempreFallaTest
-21:45:28.164 INFO  AUTOMATION - Navegando a: https://the-internet.herokuapp.com/
-21:45:31.544 INFO  AUTOMATION - Obteniendo la url actual
-21:45:31.557 INFO  AUTOMATION - Verificando las url
-21:45:32.074 INFO  AUTOMATION - Test fallido: siempreFallaTest
-21:45:32.515 INFO  AUTOMATION - Suite finalizada: Surefire suite
+00:06:27.157 INFO  AUTOMATION - Suite iniciada: Default Suite
+00:06:30.147 INFO  AUTOMATION - Comenzando el test: detalleProductoTest
+00:06:30.188 INFO  AUTOMATION - Navegando a la pagina
+00:06:35.679 INFO  AUTOMATION - Escribiendo el username
+00:06:35.795 INFO  AUTOMATION - Escribiendo el password
+00:06:35.865 INFO  AUTOMATION - Haciendo click en el boton de login
+00:06:38.067 INFO  AUTOMATION - Haciendo click en el primer elemento de la lista
+00:06:38.128 INFO  AUTOMATION - Esperando que cargue el detalle del producto
+00:06:39.146 INFO  AUTOMATION - Verificando el detalle del producto
+00:06:39.982 INFO  AUTOMATION - Test fallido: detalleProductoTest
+00:06:41.125 INFO  AUTOMATION - Suite finalizada: Default Suite

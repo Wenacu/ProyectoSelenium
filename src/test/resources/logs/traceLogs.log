@@ -1,41 +1,21 @@
-21:45:03.459 INFO  AUTOMATION - Suite iniciada: Surefire suite
-21:45:03.543 DEBUG AUTOMATION - Borrando la evidencia anterior
-21:45:03.790 DEBUG AUTOMATION - Inicializando el driver
-21:45:06.372 DEBUG AUTOMATION - Maximizando la pantalla
-21:45:06.416 DEBUG AUTOMATION - Borrando las cookies
-21:45:06.436 DEBUG AUTOMATION - Asignando driver al web driver provider
-21:45:06.632 INFO  AUTOMATION - Comenzando el test: ejercicio1Test
-21:45:06.671 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
-21:45:11.170 INFO  AUTOMATION - Obteniendo la URL actual
-21:45:11.179 INFO  AUTOMATION - Verificando que las urls sean iguales
-21:45:11.191 DEBUG AUTOMATION - beforeTestStop
-21:45:11.207 INFO  AUTOMATION - Test exitoso: ejercicio1Test
-21:45:11.209 DEBUG AUTOMATION - Matando el driver
-21:45:11.478 DEBUG AUTOMATION - Inicializando el driver
-21:45:12.635 DEBUG AUTOMATION - Maximizando la pantalla
-21:45:12.670 DEBUG AUTOMATION - Borrando las cookies
-21:45:12.682 DEBUG AUTOMATION - Asignando driver al web driver provider
-21:45:12.685 INFO  AUTOMATION - Comenzando el test: ejercicio2Test
-21:45:12.689 INFO  AUTOMATION - Navegando a: https://the-internet.herokuapp.com/
-21:45:17.965 INFO  AUTOMATION - Navegando a: https://github.com/
-21:45:24.136 INFO  AUTOMATION - Regresando a la página anterior
-21:45:26.170 INFO  AUTOMATION - Obteniendo la URL actual
-21:45:26.184 INFO  AUTOMATION - Verificando que las urls sean iguales
-21:45:26.185 DEBUG AUTOMATION - beforeTestStop
-21:45:26.188 INFO  AUTOMATION - Test exitoso: ejercicio2Test
-21:45:26.190 DEBUG AUTOMATION - Matando el driver
-21:45:26.614 DEBUG AUTOMATION - Inicializando el driver
-21:45:28.111 DEBUG AUTOMATION - Maximizando la pantalla
-21:45:28.139 DEBUG AUTOMATION - Borrando las cookies
-21:45:28.152 DEBUG AUTOMATION - Asignando driver al web driver provider
-21:45:28.155 INFO  AUTOMATION - Comenzando el test: siempreFallaTest
-21:45:28.164 INFO  AUTOMATION - Navegando a: https://the-internet.herokuapp.com/
-21:45:31.544 INFO  AUTOMATION - Obteniendo la url actual
-21:45:31.557 INFO  AUTOMATION - Verificando las url
-21:45:31.569 DEBUG AUTOMATION - beforeTestStop
-21:45:32.074 INFO  AUTOMATION - Test fallido: siempreFallaTest
-21:45:32.075 DEBUG AUTOMATION - Tomando screenshot
-21:45:32.230 DEBUG AUTOMATION - Tomando page source
-21:45:32.230 DEBUG AUTOMATION - Creando los directorios padres si no existen
-21:45:32.249 DEBUG AUTOMATION - Matando el driver
-21:45:32.515 INFO  AUTOMATION - Suite finalizada: Surefire suite
+00:06:27.157 INFO  AUTOMATION - Suite iniciada: Default Suite
+00:06:27.270 DEBUG AUTOMATION - Borrando la evidencia anterior
+00:06:27.439 DEBUG AUTOMATION - Inicializando el driver
+00:06:29.845 DEBUG AUTOMATION - Maximizando la pantalla
+00:06:29.905 DEBUG AUTOMATION - Borrando las cookies
+00:06:29.925 DEBUG AUTOMATION - Asignando driver al web driver provider
+00:06:30.147 INFO  AUTOMATION - Comenzando el test: detalleProductoTest
+00:06:30.188 INFO  AUTOMATION - Navegando a la pagina
+00:06:35.679 INFO  AUTOMATION - Escribiendo el username
+00:06:35.795 INFO  AUTOMATION - Escribiendo el password
+00:06:35.865 INFO  AUTOMATION - Haciendo click en el boton de login
+00:06:38.067 INFO  AUTOMATION - Haciendo click en el primer elemento de la lista
+00:06:38.128 INFO  AUTOMATION - Esperando que cargue el detalle del producto
+00:06:39.146 INFO  AUTOMATION - Verificando el detalle del producto
+00:06:39.226 DEBUG AUTOMATION - beforeTestStop
+00:06:39.982 INFO  AUTOMATION - Test fallido: detalleProductoTest
+00:06:39.982 DEBUG AUTOMATION - Tomando screenshot
+00:06:40.355 DEBUG AUTOMATION - Tomando page source
+00:06:40.355 DEBUG AUTOMATION - Creando los directorios padres si no existen
+00:06:40.616 DEBUG AUTOMATION - Matando el driver
+00:06:41.125 INFO  AUTOMATION - Suite finalizada: Default Suite
