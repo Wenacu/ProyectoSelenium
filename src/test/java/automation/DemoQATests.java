@@ -1,13 +1,18 @@
 package automation;
 
 import net.datafaker.Faker;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.BaseTest;
 import utilities.Logs;
+
+import java.time.Duration;
 
 public class DemoQATests extends BaseTest {
     @Test
@@ -115,4 +120,89 @@ public class DemoQATests extends BaseTest {
                 "buttonToolTip"
         );
     }
+
+    @Test
+    public void alert1Test() {
+        Logs.info("Navegando a la página");
+        driver.get("https://demoqa.com/alerts");
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+        Logs.info("Esperando que cargue la página");
+        wait.until(ExpectedConditions
+                .visibilityOfElementLocated(By.xpath("//h1[text()='Alerts']")));
+
+        Logs.info("Haciendo click en el boton para que aparezca el alert");
+        driver.findElement(By.id("alertButton")).click();
+
+        Logs.debug("Obteniendo el alert");
+        final var alert = (Alert) wait.until(ExpectedConditions.alertIsPresent());
+
+        Logs.info("Verificando que el texto del alert sea correcto");
+        Assert.assertEquals(alert.getText(), "You clicked a button");
+
+        Logs.info("Presionando el boton del alert");
+        alert.accept();
+    }
+
+    @Test
+    public void alert2Test() {
+        Logs.info("Navegando a la página");
+        driver.get("https://demoqa.com/alerts");
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+        Logs.info("Esperando que cargue la página");
+        wait.until(ExpectedConditions
+                .visibilityOfElementLocated(By.xpath("//h1[text()='Alerts']")));
+
+        Logs.info("Haciendo click en el boton para que aparezca el confirm");
+        driver.findElement(By.id("confirmButton")).click();
+
+        Logs.debug("Obteniendo el alert");
+        final var alert = (Alert) wait.until(ExpectedConditions.alertIsPresent());
+
+        Logs.info("Haciendo click en cancel en el alert/continue");
+        alert.dismiss();
+
+        Logs.info("Verificando que el div cancel sea visible");
+        Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Cancel']")).isDisplayed());
+    }
+
+    @Test
+    public void alert3Test() {
+        Logs.info("Navegando a la página");
+        driver.get("https://demoqa.com/alerts");
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+        Logs.info("Esperando que cargue la página");
+        wait.until(ExpectedConditions
+                .visibilityOfElementLocated(By.xpath("//h1[text()='Alerts']")));
+
+        Logs.info("Haciendo click en el boton para que aparezca el prompt");
+        driver.findElement(By.id("promtButton")).click();
+
+        Logs.debug("Obteniendo el alert");
+        final var alert = (Alert) wait.until(ExpectedConditions.alertIsPresent());
+
+        final var faker = new Faker();
+        final var randomName = faker.name().firstName();
+
+        Logs.info("Escribiendo el nombre en el prompt");
+        alert.sendKeys(randomName);
+
+        Logs.info("Presionando accept en el alert");
+        alert.accept();
+
+        final var dynamicLocator = String.format("//span[text()='%s']", randomName);
+
+        Logs.info("Verificando que el nombre sea visible");
+        Assert.assertTrue(
+                driver.findElement(By.xpath(dynamicLocator))
+                        .isDisplayed()
+        );
+    }
 }
+
+
