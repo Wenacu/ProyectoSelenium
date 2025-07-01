@@ -105,8 +105,9 @@ public class DemoQATests extends BaseTest {
         Logs.info("Poniendo el puntero del mouse encima del boton verde");
         new Actions(driver)
                 .moveToElement(botonVerde) //puntero encima del boton verde
-                .pause(3000) //pausa de 1.5s
+                .pause(1500) //pausa de 1.5s
                 .perform(); //ejecutar acciones
+
 
         Logs.info("Verificando el texto del hover");
         Assert.assertEquals(

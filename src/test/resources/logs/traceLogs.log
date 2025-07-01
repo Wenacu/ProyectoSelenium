@@ -1,18 +1,16 @@
-01:16:37.617 INFO  AUTOMATION - Suite iniciada: Default Suite
-01:16:37.705 DEBUG AUTOMATION - Borrando la evidencia anterior
-01:16:37.900 DEBUG AUTOMATION - Inicializando el driver
-01:16:40.066 DEBUG AUTOMATION - Maximizando la pantalla
-01:16:40.117 DEBUG AUTOMATION - Borrando las cookies
-01:16:40.135 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
-01:16:40.153 DEBUG AUTOMATION - Asignando driver al web driver provider
-01:16:40.567 INFO  AUTOMATION - Comenzando el test: mouseTest2
-01:16:40.598 INFO  AUTOMATION - Navegando a la pagina
-01:16:47.013 INFO  AUTOMATION - Poniendo el puntero del mouse encima del boton verde
-01:16:50.248 INFO  AUTOMATION - Verificando el texto del hover
-01:16:50.289 DEBUG AUTOMATION - beforeTestStop
-01:16:50.971 INFO  AUTOMATION - Test fallido: mouseTest2
-01:16:50.972 DEBUG AUTOMATION - Tomando screenshot
-01:16:51.203 DEBUG AUTOMATION - Tomando page source
-01:16:51.203 DEBUG AUTOMATION - Creando los directorios padres si no existen
-01:16:51.251 DEBUG AUTOMATION - Matando el driver
-01:16:51.624 INFO  AUTOMATION - Suite finalizada: Default Suite
+10:11:21.563 INFO  AUTOMATION - Suite iniciada: Default Suite
+10:11:21.659 DEBUG AUTOMATION - Borrando la evidencia anterior
+10:11:21.828 DEBUG AUTOMATION - Inicializando el driver
+10:11:24.032 DEBUG AUTOMATION - Maximizando la pantalla
+10:11:24.068 DEBUG AUTOMATION - Borrando las cookies
+10:11:24.077 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+10:11:24.082 DEBUG AUTOMATION - Asignando driver al web driver provider
+10:11:24.318 INFO  AUTOMATION - Comenzando el test: scroll2Test
+10:11:24.370 INFO  AUTOMATION - Navegando a la página
+10:11:27.026 INFO  AUTOMATION - Haciendo scroll hacia el iframe
+10:11:28.354 DEBUG AUTOMATION - Cambiamos el contexto del iframe
+10:11:28.541 INFO  AUTOMATION - Verificando que el checkbox esté seleccionado
+10:11:28.562 DEBUG AUTOMATION - beforeTestStop
+10:11:28.573 INFO  AUTOMATION - Test exitoso: scroll2Test
+10:11:28.575 DEBUG AUTOMATION - Matando el driver
+10:11:28.888 INFO  AUTOMATION - Suite finalizada: Default Suite
