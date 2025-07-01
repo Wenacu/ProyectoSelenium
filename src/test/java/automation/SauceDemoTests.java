@@ -163,6 +163,37 @@ public class SauceDemoTests extends BaseTest {
         Assert.assertTrue(driver.findElement(By.id("user-name")).isDisplayed());
     }
 
+    @Test(groups = {regression})
+    public void cookie1Test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        Logs.info("Obteniendo el set de las cookies");
+        var cookieSet = driver.manage().getCookies();
+
+        Logs.info("Verificando que solo hay 1 cookie");
+        Assert.assertEquals(cookieSet.size(), 1);
+
+        Logs.info("Borrando las cookies");
+        driver.manage().deleteAllCookies();
+
+        Logs.info("Obteniendo el set de las cookies");
+        cookieSet = driver.manage().getCookies();
+
+        Logs.info("Verificando que su tamaño sea 0");
+        Assert.assertTrue(cookieSet.isEmpty());
+    }
+
+    @Test(groups = {regression})
+    public void cookie2Test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        Logs.info("Obteniendo la info del cookie de login");
+        final var cookieLogin = driver.manage().getCookieNamed("session-username");
+
+        Logs.info("Verificando que su value sea standard_user");
+        Assert.assertEquals(cookieLogin.getValue(), "standard_user");
+    }
+
 
     private void rellenarFormularioLogin(String username, String password) {
         Logs.info("Navegando a la pagina");

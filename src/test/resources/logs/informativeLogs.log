@@ -1,7 +1,10 @@
-10:11:21.563 INFO  AUTOMATION - Suite iniciada: Default Suite
-10:11:24.318 INFO  AUTOMATION - Comenzando el test: scroll2Test
-10:11:24.370 INFO  AUTOMATION - Navegando a la página
-10:11:27.026 INFO  AUTOMATION - Haciendo scroll hacia el iframe
-10:11:28.541 INFO  AUTOMATION - Verificando que el checkbox esté seleccionado
-10:11:28.573 INFO  AUTOMATION - Test exitoso: scroll2Test
-10:11:28.888 INFO  AUTOMATION - Suite finalizada: Default Suite
+10:18:41.028 INFO  AUTOMATION - Suite iniciada: Default Suite
+10:18:43.597 INFO  AUTOMATION - Comenzando el test: cookie2Test
+10:18:43.643 INFO  AUTOMATION - Navegando a la pagina
+10:18:46.187 INFO  AUTOMATION - Escribiendo el username
+10:18:46.302 INFO  AUTOMATION - Escribiendo el password
+10:18:46.398 INFO  AUTOMATION - Haciendo click en el boton de login
+10:18:46.525 INFO  AUTOMATION - Obteniendo la info del cookie de login
+10:18:46.543 INFO  AUTOMATION - Verificando que su value sea standard_user
+10:18:46.576 INFO  AUTOMATION - Test exitoso: cookie2Test
+10:18:46.877 INFO  AUTOMATION - Suite finalizada: Default Suite
