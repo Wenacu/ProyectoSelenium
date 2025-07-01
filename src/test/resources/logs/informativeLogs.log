@@ -1,6 +1,11 @@
-10:26:02.883 INFO  AUTOMATION - Suite iniciada: Default Suite
-10:26:05.523 INFO  AUTOMATION - Comenzando el test: subirFileTest
-10:26:05.560 INFO  AUTOMATION - Navegar a la página
-10:26:07.966 INFO  AUTOMATION - Subiendo imagen
-10:26:14.285 INFO  AUTOMATION - Test fallido: subirFileTest
-10:26:15.040 INFO  AUTOMATION - Suite finalizada: Default Suite
+10:34:46.152 INFO  AUTOMATION - Suite iniciada: Default Suite
+10:34:48.931 INFO  AUTOMATION - Comenzando el test: relativeLocator2Test
+10:34:48.982 INFO  AUTOMATION - Navegando a la pagina
+10:34:51.427 INFO  AUTOMATION - Escribiendo el username
+10:34:51.558 INFO  AUTOMATION - Escribiendo el password
+10:34:51.673 INFO  AUTOMATION - Haciendo click en el boton de login
+10:34:51.850 INFO  AUTOMATION - Verificando que el texto sea Add to Cart
+10:34:51.883 INFO  AUTOMATION - Haciendo click en el boton de Sauce Labs Fleece Jacket
+10:34:51.990 INFO  AUTOMATION - Verificando que el texto diga Remove
+10:34:52.025 INFO  AUTOMATION - Test exitoso: relativeLocator2Test
+10:34:52.334 INFO  AUTOMATION - Suite finalizada: Default Suite
