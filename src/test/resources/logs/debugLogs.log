@@ -1,17 +1,18 @@
-23:02:29.606 INFO  AUTOMATION - Suite iniciada: Default Suite
-23:02:29.726 DEBUG AUTOMATION - Borrando la evidencia anterior
-23:02:29.932 DEBUG AUTOMATION - Inicializando el driver
-23:02:32.832 DEBUG AUTOMATION - Maximizando la pantalla
-23:02:32.888 DEBUG AUTOMATION - Borrando las cookies
-23:02:32.927 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
-23:02:32.939 DEBUG AUTOMATION - Asignando driver al web driver provider
-23:02:33.272 INFO  AUTOMATION - Comenzando el test: iframeTest
-23:02:33.328 INFO  AUTOMATION - Navegando a la pagina principal
-23:02:35.980 DEBUG AUTOMATION - Nos posicionamos en el iframe
-23:02:36.145 INFO  AUTOMATION - Verificando el titulo del iframe
-23:02:36.279 DEBUG AUTOMATION - Regresando a la pagina original
-23:02:36.305 INFO  AUTOMATION - Verificando el titulo de la pagina
-23:02:36.416 DEBUG AUTOMATION - beforeTestStop
-23:02:36.437 INFO  AUTOMATION - Test exitoso: iframeTest
-23:02:36.445 DEBUG AUTOMATION - Matando el driver
-23:02:36.807 INFO  AUTOMATION - Suite finalizada: Default Suite
+01:16:37.617 INFO  AUTOMATION - Suite iniciada: Default Suite
+01:16:37.705 DEBUG AUTOMATION - Borrando la evidencia anterior
+01:16:37.900 DEBUG AUTOMATION - Inicializando el driver
+01:16:40.066 DEBUG AUTOMATION - Maximizando la pantalla
+01:16:40.117 DEBUG AUTOMATION - Borrando las cookies
+01:16:40.135 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+01:16:40.153 DEBUG AUTOMATION - Asignando driver al web driver provider
+01:16:40.567 INFO  AUTOMATION - Comenzando el test: mouseTest2
+01:16:40.598 INFO  AUTOMATION - Navegando a la pagina
+01:16:47.013 INFO  AUTOMATION - Poniendo el puntero del mouse encima del boton verde
+01:16:50.248 INFO  AUTOMATION - Verificando el texto del hover
+01:16:50.289 DEBUG AUTOMATION - beforeTestStop
+01:16:50.971 INFO  AUTOMATION - Test fallido: mouseTest2
+01:16:50.972 DEBUG AUTOMATION - Tomando screenshot
+01:16:51.203 DEBUG AUTOMATION - Tomando page source
+01:16:51.203 DEBUG AUTOMATION - Creando los directorios padres si no existen
+01:16:51.251 DEBUG AUTOMATION - Matando el driver
+01:16:51.624 INFO  AUTOMATION - Suite finalizada: Default Suite

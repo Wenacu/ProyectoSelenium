@@ -1,7 +1,7 @@
-23:02:29.606 INFO  AUTOMATION - Suite iniciada: Default Suite
-23:02:33.272 INFO  AUTOMATION - Comenzando el test: iframeTest
-23:02:33.328 INFO  AUTOMATION - Navegando a la pagina principal
-23:02:36.145 INFO  AUTOMATION - Verificando el titulo del iframe
-23:02:36.305 INFO  AUTOMATION - Verificando el titulo de la pagina
-23:02:36.437 INFO  AUTOMATION - Test exitoso: iframeTest
-23:02:36.807 INFO  AUTOMATION - Suite finalizada: Default Suite
+01:16:37.617 INFO  AUTOMATION - Suite iniciada: Default Suite
+01:16:40.567 INFO  AUTOMATION - Comenzando el test: mouseTest2
+01:16:40.598 INFO  AUTOMATION - Navegando a la pagina
+01:16:47.013 INFO  AUTOMATION - Poniendo el puntero del mouse encima del boton verde
+01:16:50.248 INFO  AUTOMATION - Verificando el texto del hover
+01:16:50.971 INFO  AUTOMATION - Test fallido: mouseTest2
+01:16:51.624 INFO  AUTOMATION - Suite finalizada: Default Suite
