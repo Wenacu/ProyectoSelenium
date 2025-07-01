@@ -1,20 +1,18 @@
-10:34:46.152 INFO  AUTOMATION - Suite iniciada: Default Suite
-10:34:46.252 DEBUG AUTOMATION - Borrando la evidencia anterior
-10:34:46.409 DEBUG AUTOMATION - Inicializando el driver
-10:34:48.677 DEBUG AUTOMATION - Maximizando la pantalla
-10:34:48.728 DEBUG AUTOMATION - Borrando las cookies
-10:34:48.740 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
-10:34:48.748 DEBUG AUTOMATION - Asignando driver al web driver provider
-10:34:48.931 INFO  AUTOMATION - Comenzando el test: relativeLocator2Test
-10:34:48.982 INFO  AUTOMATION - Navegando a la pagina
-10:34:51.427 INFO  AUTOMATION - Escribiendo el username
-10:34:51.558 INFO  AUTOMATION - Escribiendo el password
-10:34:51.673 INFO  AUTOMATION - Haciendo click en el boton de login
-10:34:51.850 INFO  AUTOMATION - Verificando que el texto sea Add to Cart
-10:34:51.883 INFO  AUTOMATION - Haciendo click en el boton de Sauce Labs Fleece Jacket
-10:34:51.967 DEBUG AUTOMATION - Refrescando referencia del boton
-10:34:51.990 INFO  AUTOMATION - Verificando que el texto diga Remove
-10:34:52.011 DEBUG AUTOMATION - beforeTestStop
-10:34:52.025 INFO  AUTOMATION - Test exitoso: relativeLocator2Test
-10:34:52.028 DEBUG AUTOMATION - Matando el driver
-10:34:52.334 INFO  AUTOMATION - Suite finalizada: Default Suite
+10:49:05.010 INFO  AUTOMATION - Suite iniciada: Default Suite
+10:49:05.102 DEBUG AUTOMATION - Borrando la evidencia anterior
+10:49:05.268 DEBUG AUTOMATION - Inicializando el driver
+10:49:07.401 DEBUG AUTOMATION - Maximizando la pantalla
+10:49:07.446 DEBUG AUTOMATION - Borrando las cookies
+10:49:07.460 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+10:49:07.470 DEBUG AUTOMATION - Asignando driver al web driver provider
+10:49:07.694 INFO  AUTOMATION - Comenzando el test: shadowDom2Test
+10:49:07.746 INFO  AUTOMATION - Navegando a la página
+10:49:11.273 DEBUG AUTOMATION - Obteniendo el shadow root
+10:49:11.312 DEBUG AUTOMATION - Obteniendo el input a traves del shadow root
+10:49:11.346 INFO  AUTOMATION - Escribiendo hello world en el input
+10:49:12.605 DEBUG AUTOMATION - Obteniendo el shadow root interno
+10:49:12.693 INFO  AUTOMATION - Verificando que la lista de libros sea visible
+10:49:12.765 DEBUG AUTOMATION - beforeTestStop
+10:49:12.791 INFO  AUTOMATION - Test exitoso: shadowDom2Test
+10:49:12.796 DEBUG AUTOMATION - Matando el driver
+10:49:13.173 INFO  AUTOMATION - Suite finalizada: Default Suite
