@@ -1,7 +1,125 @@
-10:49:05.010 INFO  AUTOMATION - Suite iniciada: Default Suite
-10:49:07.694 INFO  AUTOMATION - Comenzando el test: shadowDom2Test
-10:49:07.746 INFO  AUTOMATION - Navegando a la página
-10:49:11.346 INFO  AUTOMATION - Escribiendo hello world en el input
-10:49:12.693 INFO  AUTOMATION - Verificando que la lista de libros sea visible
-10:49:12.791 INFO  AUTOMATION - Test exitoso: shadowDom2Test
-10:49:13.173 INFO  AUTOMATION - Suite finalizada: Default Suite
+11:09:18.132 INFO  AUTOMATION - Suite iniciada: Surefire suite
+11:09:21.142 INFO  AUTOMATION - Comenzando el test: cookie1Test
+11:09:21.174 INFO  AUTOMATION - Navegando a la pagina
+11:09:24.322 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:24.374 INFO  AUTOMATION - Escribiendo el username
+11:09:24.470 INFO  AUTOMATION - Escribiendo el password
+11:09:24.580 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:24.726 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:24.753 INFO  AUTOMATION - Obteniendo el set de las cookies
+11:09:24.764 INFO  AUTOMATION - Verificando que solo hay 1 cookie
+11:09:24.768 INFO  AUTOMATION - Borrando las cookies
+11:09:24.787 INFO  AUTOMATION - Obteniendo el set de las cookies
+11:09:24.794 INFO  AUTOMATION - Verificando que su tamaño sea 0
+11:09:24.818 INFO  AUTOMATION - Test exitoso: cookie1Test
+11:09:26.246 INFO  AUTOMATION - Comenzando el test: cookie2Test
+11:09:26.255 INFO  AUTOMATION - Navegando a la pagina
+11:09:29.219 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:29.258 INFO  AUTOMATION - Escribiendo el username
+11:09:29.348 INFO  AUTOMATION - Escribiendo el password
+11:09:29.445 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:29.591 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:29.622 INFO  AUTOMATION - Obteniendo la info del cookie de login
+11:09:29.632 INFO  AUTOMATION - Verificando que su value sea standard_user
+11:09:29.635 INFO  AUTOMATION - Test exitoso: cookie2Test
+11:09:31.126 INFO  AUTOMATION - Comenzando el test: detalleProductoTest
+11:09:31.131 INFO  AUTOMATION - Navegando a la pagina
+11:09:34.085 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:34.123 INFO  AUTOMATION - Escribiendo el username
+11:09:34.215 INFO  AUTOMATION - Escribiendo el password
+11:09:34.306 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:34.445 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:34.502 INFO  AUTOMATION - Haciendo click en el primer elemento de la lista
+11:09:34.613 INFO  AUTOMATION - Esperando que cargue el detalle del producto
+11:09:34.653 INFO  AUTOMATION - Verificando detalle del producto
+11:09:34.760 INFO  AUTOMATION - Test exitoso: detalleProductoTest
+11:09:36.098 INFO  AUTOMATION - Comenzando el test: link1Test
+11:09:36.106 INFO  AUTOMATION - Navegando a la pagina
+11:09:38.951 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:38.989 INFO  AUTOMATION - Escribiendo el username
+11:09:39.074 INFO  AUTOMATION - Escribiendo el password
+11:09:39.156 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:39.336 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:39.374 INFO  AUTOMATION - Verificando que el hipervinculo este correcto
+11:09:39.428 INFO  AUTOMATION - Test exitoso: link1Test
+11:09:40.791 INFO  AUTOMATION - Comenzando el test: link2Test
+11:09:40.796 INFO  AUTOMATION - Navegando a la pagina
+11:09:43.668 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:43.705 INFO  AUTOMATION - Escribiendo el username
+11:09:43.793 INFO  AUTOMATION - Escribiendo el password
+11:09:43.883 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:44.016 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:44.069 INFO  AUTOMATION - Verificando que el hipervinculo este correcto
+11:09:44.137 INFO  AUTOMATION - Test exitoso: link2Test
+11:09:45.556 INFO  AUTOMATION - Comenzando el test: link3Test
+11:09:45.562 INFO  AUTOMATION - Navegando a la pagina
+11:09:51.337 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:51.379 INFO  AUTOMATION - Escribiendo el username
+11:09:51.465 INFO  AUTOMATION - Escribiendo el password
+11:09:51.551 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:51.692 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:51.718 INFO  AUTOMATION - Abriendo menú burger
+11:09:51.808 INFO  AUTOMATION - Esperando que abra el menú
+11:09:52.394 INFO  AUTOMATION - Verificando el vinculo de about
+11:09:52.419 INFO  AUTOMATION - Test exitoso: link3Test
+11:09:53.801 INFO  AUTOMATION - Comenzando el test: logoutTest
+11:09:53.806 INFO  AUTOMATION - Navegando a la pagina
+11:09:57.068 INFO  AUTOMATION - Esperando que cargue la página principal
+11:09:57.105 INFO  AUTOMATION - Escribiendo el username
+11:09:57.197 INFO  AUTOMATION - Escribiendo el password
+11:09:57.297 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:09:57.424 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:09:57.450 INFO  AUTOMATION - Abriendo menú burger
+11:09:57.552 INFO  AUTOMATION - Esperando que abra el menú
+11:09:58.177 INFO  AUTOMATION - Esperando que llegue a la página inicial
+11:10:04.027 INFO  AUTOMATION - Test fallido: logoutTest
+11:10:05.947 INFO  AUTOMATION - Comenzando el test: relativeLocator1Test
+11:10:05.956 INFO  AUTOMATION - Navegando a la pagina
+11:10:08.842 INFO  AUTOMATION - Esperando que cargue la página principal
+11:10:08.883 INFO  AUTOMATION - Escribiendo el username
+11:10:08.989 INFO  AUTOMATION - Escribiendo el password
+11:10:09.072 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:10:09.196 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:10:09.282 INFO  AUTOMATION - Verificando que el precio sea correcto
+11:10:09.286 INFO  AUTOMATION - Test exitoso: relativeLocator1Test
+11:10:10.559 INFO  AUTOMATION - Comenzando el test: relativeLocator2Test
+11:10:10.562 INFO  AUTOMATION - Navegando a la pagina
+11:10:13.496 INFO  AUTOMATION - Esperando que cargue la página principal
+11:10:13.528 INFO  AUTOMATION - Escribiendo el username
+11:10:13.610 INFO  AUTOMATION - Escribiendo el password
+11:10:13.698 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:10:13.828 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:10:13.893 INFO  AUTOMATION - Verificando que el texto sea Add to Cart
+11:10:13.941 INFO  AUTOMATION - Haciendo click en el boton de Sauce Labs Fleece Jacket
+11:10:14.043 INFO  AUTOMATION - Verificando que el texto diga Remove
+11:10:14.056 INFO  AUTOMATION - Test exitoso: relativeLocator2Test
+11:10:15.401 INFO  AUTOMATION - Comenzando el test: select1Test
+11:10:15.410 INFO  AUTOMATION - Navegando a la pagina
+11:10:18.295 INFO  AUTOMATION - Esperando que cargue la página principal
+11:10:18.330 INFO  AUTOMATION - Escribiendo el username
+11:10:18.410 INFO  AUTOMATION - Escribiendo el password
+11:10:18.500 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:10:18.628 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:10:18.697 INFO  AUTOMATION - Seleccionamos los items de manera alfabetica Z -> A
+11:10:18.832 INFO  AUTOMATION - Obteniendo el primer elemento
+11:10:18.860 INFO  AUTOMATION - Obteniendo el ultimo elemento
+11:10:18.875 INFO  AUTOMATION - Verificando los nombres
+11:10:18.878 INFO  AUTOMATION - Test exitoso: select1Test
+11:10:20.204 INFO  AUTOMATION - Comenzando el test: usuarioInvalidoTest
+11:10:20.209 INFO  AUTOMATION - Navegando a la pagina
+11:10:23.138 INFO  AUTOMATION - Esperando que cargue la página principal
+11:10:23.175 INFO  AUTOMATION - Escribiendo el username
+11:10:23.260 INFO  AUTOMATION - Escribiendo el password
+11:10:23.342 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:10:23.453 INFO  AUTOMATION - Verificando el mensaje de error
+11:10:23.499 INFO  AUTOMATION - Test exitoso: usuarioInvalidoTest
+11:10:24.839 INFO  AUTOMATION - Comenzando el test: usuarioValidoTest
+11:10:24.845 INFO  AUTOMATION - Navegando a la pagina
+11:10:27.768 INFO  AUTOMATION - Esperando que cargue la página principal
+11:10:27.800 INFO  AUTOMATION - Escribiendo el username
+11:10:27.884 INFO  AUTOMATION - Escribiendo el password
+11:10:27.972 INFO  AUTOMATION - Haciendo click en el botón de Login
+11:10:28.132 INFO  AUTOMATION - Esperando que cargue la pagina de shopping
+11:10:28.173 INFO  AUTOMATION - Verificando que el inventory list este visible
+11:10:28.185 INFO  AUTOMATION - Test exitoso: usuarioValidoTest
+11:10:28.505 INFO  AUTOMATION - Suite finalizada: Surefire suite

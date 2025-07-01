@@ -2,11 +2,15 @@ package automation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.locators.RelativeLocator;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.BaseTest;
 import utilities.Logs;
+
+import java.time.Duration;
 
 public class SauceDemoTests extends BaseTest {
     @Test(groups = {regression, smoke})
@@ -35,34 +39,24 @@ public class SauceDemoTests extends BaseTest {
 
     @Test(groups = {regression})
     public void detalleProductoTest() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
-        final var imageList = driver.
-                findElements(By.cssSelector("img[class='inventory_item_img']"));
-        Logs.info("Haciendo click en el primer elemento de la lista");
+        final var imageList = driver.findElements(By.cssSelector("img[class='inventory_item_img']"));
 
+        Logs.info("Haciendo click en el primer elemento de la lista");
         imageList.get(0).click();
 
-        //Logs.info("Esperando que cargue el detalle del producto");
-        //sleep(1000);
+        Logs.info("Esperando que cargue el detalle del producto");
+        final var inventoryName = wait.until(ExpectedConditions
+                .visibilityOfElementLocated(By.className("inventory_details_name")));
 
-        Logs.info("Verificando el detalle del producto");
-        softAssert.assertTrue(
-                driver.findElement(By.className("inventory_details_name")).isDisplayed()
-        );
-        softAssert.assertTrue(
-                driver.findElement(By.className("inventory_details_desc")).isDisplayed()
-        );
-        softAssert.assertTrue(
-                driver.findElement(By.className("inventory_details_price")).isDisplayed()
-        );
-        softAssert.assertTrue(
-                driver.findElement(By.xpath("//button[text()='Add to cart']"))
-                        .isDisplayed()
-        );
-        softAssert.assertTrue(
-                driver.findElement(By.className("inventory_details_img")).isDisplayed()
-        );
+        Logs.info("Verificando detalle del producto");
+        softAssert.assertTrue(inventoryName.isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.className("inventory_details_desc")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.className("inventory_details_price")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.xpath("//button[text()='Add to cart']")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.className("inventory_details_img")).isDisplayed());
         softAssert.assertAll();
     }
 
@@ -124,44 +118,44 @@ public class SauceDemoTests extends BaseTest {
 
     @Test(groups = {regression})
     public void link3Test() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
-        Logs.info("Abriendo el menu burger");
+        Logs.info("Abriendo menú burger");
         driver.findElement(By.id("react-burger-menu-btn")).click();
 
-        Logs.info("Esperando que abra el menu");
-        sleep(2000);
-
-        final var aboutLink = driver.findElement(By.id("about_sidebar_link"));
+        Logs.info("Esperando que abra el menú");
+        final var aboutClick = wait.until(ExpectedConditions
+                .elementToBeClickable(By.id("about_sidebar_link")));
+        //final var aboutClick = driver.findElement(By.id("about_sidebar_link"));
 
         Logs.info("Verificando el vinculo de about");
-        softAssert.assertTrue(aboutLink.isDisplayed());
-        softAssert.assertTrue(aboutLink.isEnabled());
-        softAssert.assertEquals(aboutLink.getAttribute("href"),
-                "https://saucelabs.com/");
+        softAssert.assertTrue(aboutClick.isDisplayed());
+        softAssert.assertTrue(aboutClick.isEnabled());
+        softAssert.assertEquals(aboutClick.getAttribute("href"), "https://saucelabs.com/");
         softAssert.assertAll();
     }
 
     @Test(groups = {regression})
     public void logoutTest() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
-        Logs.info("Abriendo el menu burger");
+        Logs.info("Abriendo menú burger");
         driver.findElement(By.id("react-burger-menu-btn")).click();
 
-        Logs.info("Esperando que abra el menu");
-        sleep(2000);
+        Logs.info("Esperando que abra el menú");
+        final var logOutClick = wait.until(ExpectedConditions
+                .elementToBeClickable(By.id("logout_sidebar_link")));
 
-        final var logoutButton = driver.findElement(By.id("logout_sidebar_link"));
+        logOutClick.click();
 
-        Logs.info("Haciendo click en el boton del logout");
-        logoutButton.click();
+        Logs.info("Esperando que llegue a la página inicial");
+        final var usernameInput = wait.until(ExpectedConditions
+                .visibilityOfElementLocated(By.id("user-name")));
 
-        //Logs.info("Esperando que llegue a la pagina inicial");
-        //sleep(2000);
-
-        Logs.info("Verificando un elemento de la pagina principal");
-        Assert.assertTrue(driver.findElement(By.id("user-name")).isDisplayed());
+        Logs.info("Verificando un elemento de la página principal");
+        Assert.assertTrue(usernameInput.isDisplayed());
     }
 
     @Test(groups = {regression})
@@ -240,22 +234,30 @@ public class SauceDemoTests extends BaseTest {
 
 
     private void rellenarFormularioLogin(String username, String password) {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         Logs.info("Navegando a la pagina");
         driver.get("https://www.saucedemo.com/");
 
-        //sleep(3000);
+        Logs.info("Esperando que cargue la página principal");
+        final var usernameInput = wait.until(ExpectedConditions
+                .visibilityOfElementLocated(By.id("user-name")));
 
         Logs.info("Escribiendo el username");
-        driver.findElement(By.id("user-name")).sendKeys(username);
+        usernameInput.sendKeys(username);
 
         Logs.info("Escribiendo el password");
         driver.findElement(By.id("password")).sendKeys(password);
 
-        Logs.info("Haciendo click en el boton de login");
+        Logs.info("Haciendo click en el botón de Login");
         driver.findElement(By.id("login-button")).click();
 
-        //sleep(2000);
-
+        if (username.equals("standard_user")) {
+            Logs.info("Esperando que cargue la pagina de shopping");
+            wait.until(ExpectedConditions
+                    .visibilityOfElementLocated(By.className("inventory_list")));
+        }
     }
+
 }
+
 
